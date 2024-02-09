@@ -2,7 +2,8 @@
 
 .infos-bar{
     padding: 16px 24px;
-    background-color: variables.$textColor;
+    // background-color: variables.$textColor;
+    background-color: rgba(#fff, 0.7);
     display: flex;
     justify-content: space-between;
     border-radius: 10px;
