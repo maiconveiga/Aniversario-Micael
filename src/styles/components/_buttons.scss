@@ -1,0 +1,42 @@
+@use '../variables';
+
+.button{
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    white-space: nowrap;
+    border-radius: 10px;
+
+    &--primary{
+        color: variables.$textColor;
+        background-color: variables.$buttonColor;
+        @media (min-width:641px) {
+            margin-left: 10px;
+        }
+    }
+    &--secundary{
+        color: variables.$textColor;
+        background-color: variables.$buttonColorNop;
+
+        @media (max-width:640px) {
+            margin-top: 5px;
+        }
+        @media (min-width:641px) {
+            margin-left: 10px;
+        }
+    }
+
+
+    @media (max-width:640px) {
+        display: block;
+        width: 100%;  
+        justify-content: center;
+    }
+
+    @media (max-width: 1024px) {
+        display: flex;
+        align-items: center;
+    }
+}
